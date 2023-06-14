@@ -1,13 +1,28 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">FinanceApp</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿<!-- Navigation Bar Component-->
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
+<nav>
+    <input type="checkbox" id="navCheckBox" />
+    <label for="navCheckBox" class="navCheckBoxbtn"><i class="bi bi-list"></i></label>
+    <label class="logo"> MG Finance  </label>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Input Data</a></li>
+        <li><a href="#">View Data</a></li>
+    </ul>
+</nav>
+
+
+
+    
+
+
+
+
+
+<!--div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
+    
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -25,7 +40,7 @@
             </NavLink>
         </div>
     </nav>
-</div>
+</div -->
 
 @code {
     private bool collapseNavMenu = true;

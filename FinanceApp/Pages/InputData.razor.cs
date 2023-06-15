@@ -1,6 +1,6 @@
 ﻿namespace FinanceApp.Pages
 {
-    public class InputData
+    public partial class  InputData
     {
     }
 }

@@ -50,6 +50,8 @@ a.active,a:hover{
     transition: .5s;
 }
 
+
+
 /* Style for the menu icon button and doesnt display at certain size */
 .navCheckBoxbtn{
     font-size: 40px;

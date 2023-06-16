@@ -1,19 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
-body{
-    font-family: montserrat;
-}
 
 nav {
     background: #0094ff;
     height: 80px;
     width: 100%;
+    border-bottom: 2px solid black;
+    font-family: montserrat;
 }
 
 label.logo{

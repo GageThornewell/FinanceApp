@@ -1,3 +1,4 @@
+
 ﻿using FinanceApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
@@ -14,5 +15,6 @@ namespace FinanceApp.Data
 
         public DbSet<TestData> testDatas { get; set; }
     }
+
 
 }

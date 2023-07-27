@@ -1,13 +1,18 @@
 using FinanceApp.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var connectionString = builder.Configuration.GetConnectionString("Default")
+    ?? throw new NullReferenceException("No Connection String!!!");
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+//Where the Connection string to sql studio server goes. Need this to connect to the database. 
+builder.Services.AddDbContextFactory<_DbContext>((DbContextOptionsBuilder options) =>
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

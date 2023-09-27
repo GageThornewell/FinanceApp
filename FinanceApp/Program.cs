@@ -11,8 +11,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 //Where the Connection string to sql studio server goes. Need this to connect to the database. 
-builder.Services.AddDbContextFactory<_DbContext>((DbContextOptionsBuilder options) =>
-    options.UseSqlServer(connectionString));
+
 
 var app = builder.Build();
 
